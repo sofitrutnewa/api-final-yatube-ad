@@ -7,5 +7,5 @@ urlpatterns = [
     path('api/v1/', include('api.urls')),
     path('api/v1/', include('djoser.urls')),
     path('api/v1/', include('djoser.urls.jwt')),
-    path('redoc/',     TemplateView.as_view(template_name="redoc.html"),
+    path('redoc/', TemplateView.as_view(template_name='redoc.html'), name='redoc'),
 ]
